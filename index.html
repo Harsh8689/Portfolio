@@ -12,33 +12,6 @@
         rel="stylesheet">
 
     <style>
-
-@media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-            nav ul li {
-                margin: 10px 0;
-            }
-            .container {
-                max-width: 95vw;
-                padding: 10px;
-            }
-            .section {
-                margin: 100px 0;
-                padding: 10px;
-            }
-            .footer {
-                flex-direction: column;
-                align-items: center;
-                padding: 20px 10px;
-            }
-            .footer div {
-                margin-bottom: 10px;
-            }
-        }
-
         * {
             margin: 0;
             padding: 0;
@@ -66,19 +39,16 @@
         nav ul li {
             list-style: none;
             margin: 0 28px;
-
         }
 
         nav ul li a {
             text-decoration: none;
             color: antiquewhite;
-
         }
 
         nav ul li a:hover {
             color: blueviolet;
             font-size: 1.1rem;
-
         }
 
         main hr {
@@ -86,7 +56,6 @@
             background: rgb(255, 255, 255);
             height: 1.2px;
             margin: 70px 95px;
-
         }
 
         .left {
@@ -107,20 +76,17 @@
         .leftsection {
             font-size: 1.5rem;
             font-style: italic;
-
-
         }
 
         .rightsection img {
             width: 80%;
+            max-width: 300px;
+            /* Ensure a maximum width for better stability */
             margin: 50px 0;
-
-
         }
 
         .purple {
             color: rgb(192, 149, 233);
-
         }
 
         .violete {
@@ -154,7 +120,6 @@
             width: 1px;
             background-color: white;
             margin: 0 100px;
-
         }
 
         .image-top {
@@ -170,7 +135,6 @@
             width: 150px;
             left: 9px;
         }
-
 
         .vertical-desc {
             position: relative;
@@ -188,8 +152,6 @@
             left: -9;
         }
 
-
-
         .vertical-title1 {
             position: relative;
             top: -58px;
@@ -200,8 +162,6 @@
         footer {
             background-color: rgb(33, 33, 33);
             height: 120px;
-
-
         }
 
         .footer {
@@ -213,20 +173,88 @@
         .footer ul {
             list-style: none;
         }
-        .footer-textcentre{
+
+        .footer-textcentre {
             text-align: center;
             color: grey;
-
         }
-      
 
         .footer li a {
-    color: white;
-    text-decoration: none;
-}
-.footer li a:hover {
-    color: rgb(143, 92, 190);
-}
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer li a:hover {
+            color: rgb(143, 92, 190);
+        }
+
+        @media (max-width: 768px) {
+            .firstsection {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .leftsection {
+                font-size: 1.2rem;
+                /* Reduced text size */
+                text-align: center;
+                /* Center align text */
+            }
+
+            .index {
+                width: 90%;
+                margin-bottom: 30px;
+            }
+
+            nav {
+                flex-direction: column;
+                height: auto;
+                padding: 20px 0;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                max-width: 100vw;
+                padding: 10px;
+            }
+
+            .leftsection {
+                font-size: 1rem;
+                /* Further reduced text size */
+                text-align: center;
+                /* Center align text */
+            }
+
+            .footer {
+                padding: 20px;
+                flex-direction: column;
+            }
+
+            .footer ul {
+                text-align: center;
+                padding: 0;
+            }
+
+            .footer-first,
+            .footer-second,
+            .footer-third {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .footer-textcentre {
+                font-size: 0.8rem;
+            }
+        }
     </style>
 </head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -261,9 +289,6 @@
             <div class="rightsection">
                 <img src="pspic.jpg" alt="">
             </div>
-
-
-
         </section>
 
         <hr>
@@ -276,28 +301,21 @@
                     <img class="image-top" src="de.png" alt="">
                     <div class="vertical-title">
                         Logistics Sports Leader
-
                     </div>
                     <div class="vertical-desc">
                         Pune City(SFS/RNC/CNC)
                         2023-2024
-
                     </div>
-
                 </div>
                 <div class="vertical">
                     <img class="image-top1" src="lo.png" alt="">
                     <div class="vertical-title1">
                         Yet to fill
-
                     </div>
                     <div class="vertical-desc">
-
-
                     </div>
-
                 </div>
-
+            </div>
         </section>
     </main>
     <footer>
@@ -308,33 +326,26 @@
             <div class="footer-second">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-
                 </ul>
             </div>
             <div class="footer-third">
                 <ul>
                     <li><a href="about.html">About Me</a></li>
-
                 </ul>
             </div>
             <div class="footer-third">
                 <ul>
                     <li><a href="contact.html">Contact Me</a></li>
-
                 </ul>
-            </div class="footer-third">
+            </div>
+            <div class="footer-third">
                 <ul>
                     <li><a href="project.html">Projects</a></li>
                 </ul>
-
             </div>
-            </div>
-
-
-
         </div>
         <div class="footer-textcentre">
-            Copyright&#169;www.harshsportfolio.com | All rights reserved
+            Copyright&#169;harshsportfolio | All rights reserved
         </div>
     </footer>
 
@@ -342,13 +353,12 @@
 
     <script>
         var typed = new Typed('#element', {
-            strings: ['stay ahead of technological advancements', '&amp;  apply my skills to drive innovation and progress in the field of information technology.'],
+            strings: ['stay ahead of technological advancements','&amp; apply my skills to drive innovation and progress in the field of information technology.'],
             typeSpeed: 50,
-            loop:true
-
+            backSpeed: 25, 
+            loop: true
         });
     </script>
-
 </body>
 
 </html>
